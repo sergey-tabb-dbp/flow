@@ -13,6 +13,30 @@ governance, community health — carry none.
 
 ## [Unreleased]
 
+### Added
+- **Tasks**: clicking an image or Markdown file in a card's Assets tab now opens
+  it in a preview instead of downloading it. Markdown is rendered, and with
+  several previewable files you can move between them with ← / → or the
+  on-screen arrows. Download is still one click away. The Assets library page
+  previews Markdown the same way (rendered, not raw text).
+
+### Changed
+- **Admin**: the dashboard's companies table splits its Billing column into
+  three sortable ones: Account status (Active Customer, Trial – Active, Trial –
+  Expired, Canceled Customer, Account Locked – nonpayment, Pending activation,
+  Inactive), Account type (Paid Account or Managed by Aixle) and Billing method
+  (SaaS – Stripe, SaaS – AWS Marketplace, Self-Hosted – AWS Marketplace). They
+  show each company as it stands now, whatever period is selected.
+
+### Fixed
+- **Admin**: impersonating a user, and "Back to app" during an impersonation, open
+  the app's projects page instead of the marketing landing page.
+- **Workflows**: personal MCP can set a step's repositories, assets, expected
+  input and output files, failure action, retry limit and skip policy.
+- **Workflows**: a session set to retry on failure now retries. The builder asks
+  how many times (1–10), and sessions saved with Retry before this release retry
+  once.
+
 ## [1.11.0] - 2026-11-09
 
 ### Added
